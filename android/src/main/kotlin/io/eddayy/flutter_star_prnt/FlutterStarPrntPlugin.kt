@@ -40,7 +40,6 @@ public class FlutterStarPrntPlugin : FlutterPlugin, MethodCallHandler {
   override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
     val channel = MethodChannel(flutterPluginBinding.getFlutterEngine().getDartExecutor(), "flutter_star_prnt")
     channel.setMethodCallHandler(FlutterStarPrntPlugin())
-    setupPlugin(flutterPluginBinding.getFlutterEngine().getDartExecutor(), flutterPluginBinding.getApplicationContext())
   }
   override fun onMethodCall(@NonNull call: MethodCall, @NonNull rawResult: Result) {
     val result: MethodResultWrapper = MethodResultWrapper(rawResult)
