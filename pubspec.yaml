@@ -18,5 +18,3 @@ flutter:
       android:
         package: io.eddayy.flutter_star_prnt
         pluginClass: FlutterStarPrntPlugin
-      ios:
-        pluginClass: FlutterStarPrntPlugin
